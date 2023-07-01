@@ -1,0 +1,6 @@
+scrapper/
+__pycache__
+B2B/
+images/
+scrapper.py 
+results.csv

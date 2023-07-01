@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Mikroelectron</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: all 0.2s ease;
+            flex-direction: column;
+        }
+        h1 {
+            color: #5C6BC0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+        }
+        input[type="text"] {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: 200px;
+            transition: all 0.2s ease;
+        }
+        input[type="text"]:hover, 
+        input[type="text"]:focus {
+            transform: scale(1.02);
+            outline: none;
+            border-color: #5C6BC0;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            background-color: #5C6BC0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #3F51B5;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <h1>Electron Scrapper</h1>
+    <form method="POST">
+        <input type="text" name="search_term" placeholder="Enter the search term" required>
+        <input type="text" name="num_pages" placeholder="Enter the number of pages" required>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
